@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+            Online Computer Servicing
+        </title>
+        <link rel="stylesheet" href="register.css" type="text/css">
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+    <body>
+        <nav >
+            <div>
+                <ul class="nav-menu">
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='register.html'>Register</a></li>
+                    <li><a href='login.html'>Log In</a></li>
+                    <li><a href="service.html">Service Request</a></li>
+                </ul>
+            </div>
+        </nav>
+        <form  class="" action="" method="post">
+            <h2>REGISTRATION</h2>
+            <div class="inf"><?= $_SESSION['message']?></div><br>
+            <input type="text" name="name" placeholder="Full Name" required><br><br>
+            <input type="text" name="address" placeholder="Address" required ><br><br>
+            <input type="text" name="mnumber" placeholder="Mobile Number" pattern="[7-9]{1}[0-9]{9}" required><br><br>
+            <input type="text" name="uname" placeholder="Username" required><br><br>
+            <input type="password" name="pwd" placeholder="Password" required><br><br>
+            <input type="password" name="pwdrepeat" placeholder="Repeat Password" required><br><br>
+            <input type="submit" name="submit" value="Register">
+        </form>
+    </body>
+</html>
+
+
